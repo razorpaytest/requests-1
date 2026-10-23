@@ -1,3 +1,3 @@
 # Slash devstack check
 
-devstack check 2575 run 3
+devstack check 2575 run 4
