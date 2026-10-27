@@ -1,0 +1,8 @@
+alert_name:
+  - "Gateway-Auth SR Drop Alert"
+  - "[P1] Gateway-Auth SR Drop Alert"
+runbook: |
+  1. Open the gateway-auth success-rate dashboard and confirm the drop is across all gateways, not one.
+  2. Check the last deploy of gateway-auth; if it landed within 30 minutes of the drop, roll it back.
+  3. If no deploy, check upstream gateway health and raise with the on-call for the failing gateway.
+  4. Post the finding in the incident channel with the dashboard link and the action taken.

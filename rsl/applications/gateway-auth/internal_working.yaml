@@ -1,0 +1,4 @@
+internal_working: |
+  gateway-auth fronts every card and UPI authorization call. Its success rate
+  is computed per gateway and in aggregate; a drop in aggregate with one
+  gateway at zero is a gateway outage, not an auth bug.
